@@ -1,0 +1,40 @@
+@import "./img.css";
+
+:root {
+    --navbar-height: 56px;
+    --footer-height: 72px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.body {
+    background: rgb rgb(238, 171, 116);
+}
+
+.custom-bs-navbar {
+    background: rgb(70, 167, 70);
+    height: var(--navbar-height);
+}
+
+.my-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: rgb(22, 44, 22);
+    padding: 24px 24px;
+    height: var(--footer-height);
+}
+
+.my-footer address {
+    color: rgb(231, 220, 221);
+    margin: auto;
+}
+
+.content-section {
+    background: rgb(179, 147, 88);
+    height: calc(100% - var(--navbar-height) - var(--footer-height));
+}
